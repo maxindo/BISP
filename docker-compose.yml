@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  gembok-bill:
+    build: .
+    container_name: gembok-bill
+    restart: unless-stopped
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./whatsapp-session:/app/whatsapp-session
+      - ./settings.json:/app/settings.json
+    environment:
+      - NODE_ENV=production
+      - PORT=3003
+    networks:
+      - gembok-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  nginx:
+    image: nginx:alpine
+    container_name: gembok-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - gembok-bill
+    networks:
+      - gembok-network
+
+networks:
+  gembok-network:
+    driver: bridge
+
+volumes:
+  gembok-data:
+  gembok-logs:
+  gembok-session:
