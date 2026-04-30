@@ -1,0 +1,57 @@
+{
+  "invoice_created": {
+    "title": "Tagihan Baru",
+    "template": "\n📋 *TAGIHAN BARU*\n\nHalo {customer_name},\n\nTagihan bulanan Anda telah dibuat:\n\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n📅 *Jatuh Tempo:* {due_date}\n📦 *Paket:* {package_name} ({package_speed})\n📝 *Catatan:* {notes}\n\n*Cek Status Dan Lakukan Pembayaran Anda Di*\nwww.cvlmedia.my.id\n*_Login Dengan No Hp Terdaftar_*\n\nSilakan lakukan pembayaran sebelum tanggal jatuh tempo untuk menghindari denda keterlambatan.\nTerima kasih atas kepercayaan Anda.\n\n*CV. LINTAS MULTIMEDIA*\nˢᵘᵖᵖᵒʳᵗᵉᵈ ᵇʸ\nᴾᵀ.ᴶᴵᴺᴼᴹ ᴺᴱᵀᵂᴼᴿᴷ ᴵᴺᴰᴼᴺᴱˢᴵᴬ",
+    "enabled": true
+  },
+  "due_date_reminder": {
+    "title": "Peringatan Jatuh Tempo",
+    "template": "\n⚠️ PEMBERITAHUAN TAGIHAN TERLAMBAT\n\nTagihan Anda telah melewati jatuh tempo:\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n📅 *Jatuh Tempo:* {due_date}\n      * Status: TERLAMBAT ⚠️\n\nCek Status Dan Lakukan Pembayaran Anda Di\nwww.cvlmedia.my.id\nLogin Dengan No Hp Terdaftar\nSilakan lakukan pembayaran segera untuk menghindari denda keterlambatan.\nCV. LINTAS MULTIMEDIA\nˢᵘᵖᵖᵒʳᵗᵉᵈ ᵇʸ\nᴾᵀ.ᴶᴵᴺᴼᴹ ᴺᴱᵀᵂᴼᴿᴷ ᴵᴺᴰᴼᴺᴱˢᴵᴬ\n\nHubungi kami jika ada kendala dalam pembayaran.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nInfo Hubungi : 081368888498",
+    "enabled": true
+  },
+  "payment_received": {
+    "title": "Pembayaran Diterima",
+    "template": "✅ *PEMBAYARAN DITERIMA*\n\nHalo {customer_name},\n\nTerima kasih! Pembayaran Anda telah kami terima:\n\n📄 *No. Invoice:* {invoice_number}\n💰 *Jumlah:* Rp {amount}\n💳 *Metode Pembayaran:* {payment_method}\n📅 *Tanggal Pembayaran:* {payment_date}\n🔢 *No. Referensi:* {reference_number}\n\nLayanan internet Anda akan tetap aktif. Terima kasih atas kepercayaan Anda.",
+    "enabled": true
+  },
+  "service_disruption": {
+    "title": "Gangguan Layanan",
+    "template": "\n🚨 *GANGGUAN LAYANAN*\n\nHalo Pelanggan Setia,\n\nKami informasikan bahwa sedang terjadi gangguan pada jaringan internet:\n\n📡 *Jenis Gangguan:* {disruption_type}\n📍 *Area Terdampak:* {affected_area}\n⏰ *Perkiraan Selesai:* {estimated_resolution}\n📞 *Hotline:* {support_phone}\n\n*Cek Status Di*\nwww.cvlmedia.my.id\n*_Login Dengan No Hp Terdaftar_*\n\n\n*CV. LINTAS MULTIMEDIA*\nˢᵘᵖᵖᵒʳᵗᵉᵈ ᵇʸ\nᴾᵀ.ᴶᴵᴺᴼᴹ ᴺᴱᵀᵂᴼᴿᴷ ᴵᴺᴰᴼᴺᴱˢᴵᴬ",
+    "enabled": true
+  },
+  "service_announcement": {
+    "title": "Pengumuman Layanan",
+    "template": "\n📢 *PENGUMUMAN LAYANAN*\n\nHalo Pelanggan Setia,\n\n{announcement_content}\n\nTerima kasih atas perhatian Anda.",
+    "enabled": true
+  },
+  "service_suspension": {
+    "title": "Service Suspension",
+    "template": "\n⚠️ *LAYANAN INTERNET DINONAKTIFKAN*\n\nHalo {customer_name},\n\nLayanan internet Anda telah dinonaktifkan karena:\n📋 *Alasan:* {reason}\n\n💡 *Cara Mengaktifkan Kembali:*\n1. Lakukan pembayaran tagihan yang tertunggak\n2. Layanan akan aktif otomatis setelah pembayaran dikonfirmasi\n\n*Cek Status Dan Pembayaran Anda Di*\nwww.cvlmedia.my.id\n*_Login Dengan No Hp Terdaftar_*\n\n📞 Butuh Bantuan?\nHubungi kami di: 0813-6888-8498\n\nCV. LINTAS MULTIMEDIA\nˢᵘᵖᵖᵒʳᵗᵉᵈ ᵇʸ\nᴾᵀ.ᴶᴵᴺᴼᴹ ᴺᴱᵀᵂᴼᴿᴷ ᴵᴺᴰᴼᴺᴱˢᴵᴬ\nTerima kasih atas perhatian Anda.",
+    "enabled": true
+  },
+  "service_restoration": {
+    "title": "Service Restoration",
+    "template": "✅ *LAYANAN INTERNET DIAKTIFKAN*\n\nHalo {customer_name},\n\nSelamat! Layanan internet Anda telah diaktifkan kembali.\n\n📋 *Informasi:*\n• Status: AKTIF ✅\n• Paket: {package_name}\n• Kecepatan: {package_speed}\n\nTerima kasih telah melakukan pembayaran tepat waktu.\n\n*JINOM-HOMENET*\nInfo: 0813-6888-8498",
+    "enabled": true
+  },
+  "welcome_message": {
+    "title": "Welcome Message",
+    "template": "👋 *SELAMAT DATANG*\n\nHalo {customer_name},\n\nSelamat datang di layanan internet kami!\n\n📦 *Paket:* {package_name} ({package_speed})\n🔑 *Password WiFi:* {wifi_password}\n📞 *Support:* {support_phone}\n\nTerima kasih telah memilih layanan kami.",
+    "enabled": true
+  },
+  "installation_job_assigned": {
+    "title": "Tugas Instalasi Baru",
+    "template": "🔧 *TUGAS INSTALASI BARU*\n\nHalo {technician_name},\n\nAnda telah ditugaskan untuk instalasi baru:\n\n📋 *Detail Job:*\n• No. Job: {job_number}\n• Pelanggan: {customer_name}\n• Telepon: {customer_phone}\n• Alamat: {customer_address}\n\n📦 *Paket Internet:*\n• Nama: {package_name}\n• Harga: Rp {package_price}\n\n📅 *Jadwal Instalasi:*\n• Tanggal: {installation_date}\n• Waktu: {installation_time}\n\n📝 *Catatan:* {notes}\n🛠️ *Peralatan:* {equipment_needed}\n\n📍 *Lokasi:* {customer_address}\n\n*Status:* Ditugaskan\n*Prioritas:* {priority}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📱 *MENU KONFIRMASI:*\n\n1️⃣ *KONFIRMASI PENERIMAAN*\nBalas dengan: *TERIMA* atau *OK*\n\n2️⃣ *MULAI INSTALASI*\nBalas dengan: *MULAI* atau *START*\n\n3️⃣ *SELESAI INSTALASI*\nBalas dengan: *SELESAI* atau *DONE*\n\n4️⃣ *BUTUH BANTUAN*\nBalas dengan: *BANTU* atau *HELP*\n\n5️⃣ *LAPOR MASALAH*\nBalas dengan: *MASALAH* atau *ISSUE*\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 *HELPER RESPONS CEPAT:*\n• *TERIMA* - Konfirmasi menerima tugas\n• *MULAI* - Mulai proses instalasi\n• *SELESAI* - Tandai instalasi selesai\n• *BANTU* - Minta bantuan teknis\n• *MASALAH* - Laporkan kendala\n\n📞 *Support:* 0813-6888-8498\n\nSilakan konfirmasi penerimaan tugas ini dengan balasan *TERIMA*.\n\n*JINOM-HOMENET*",
+    "enabled": true
+  },
+  "installation_status_update": {
+    "title": "Update Status Instalasi",
+    "template": "🔄 *UPDATE STATUS INSTALASI*\n\nHalo {technician_name},\n\nStatus instalasi telah diperbarui:\n\n📋 *Detail Job:*\n• No. Job: {job_number}\n• Pelanggan: {customer_name}\n• Status Baru: {new_status}\n• Waktu Update: {update_time}\n\n📝 *Catatan:* {notes}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📱 *MENU KONFIRMASI:*\n\n1️⃣ *KONFIRMASI UPDATE*\nBalas dengan: *KONFIRM* atau *OK*\n\n2️⃣ *BUTUH BANTUAN*\nBalas dengan: *BANTU* atau *HELP*\n\n3️⃣ *LAPOR MASALAH*\nBalas dengan: *MASALAH* atau *ISSUE*\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n*JINOM-HOMENET*",
+    "enabled": true
+  },
+  "installation_completed": {
+    "title": "Instalasi Selesai",
+    "template": "✅ *INSTALASI SELESAI*\n\nHalo {technician_name},\n\nSelamat! Instalasi telah berhasil diselesaikan:\n\n📋 *Detail Job:*\n• No. Job: {job_number}\n• Pelanggan: {customer_name}\n• Status: SELESAI ✅\n• Waktu Selesai: {completion_time}\n\n📝 *Catatan Penyelesaian:* {completion_notes}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n📱 *MENU KONFIRMASI:*\n\n1️⃣ *KONFIRMASI SELESAI*\nBalas dengan: *KONFIRM* atau *OK*\n\n2️⃣ *LAPOR TAMBAHAN*\nBalas dengan: *LAPOR* atau *REPORT*\n\n3️⃣ *BUTUH BANTUAN*\nBalas dengan: *BANTU* atau *HELP*\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 *HELPER RESPONS CEPAT:*\n• *KONFIRM* - Konfirmasi penyelesaian\n• *LAPOR* - Laporkan detail tambahan\n• *BANTU* - Minta bantuan teknis\n\n*JINOM-HOMENET*",
+    "enabled": true
+  }
+}
